@@ -1,0 +1,225 @@
+/* =======================================================
+   BLOQUEIO DO GOOGLE AI (MODO IA & VISÃO GERAL POR IA)
+   ======================================================= */
+#eKIzJc,
+.SePcAf,
+.YzCcne,
+div[jscontroller="qTdDb"],
+div[data-subtree="aimc"],
+div[data-subtree="mfc"],
+div[data-attrid="wa:/description"],
+div[data-entity-type="ai_overview"],
+div[data-lhcontainer="1"],
+div:has(> .SePcAf),
+.MjjYud:has([data-entity-type="ai_overview"]),
+.MjjYud:has([aria-label*="Visão geral criada por IA"]),
+.MjjYud:has([aria-label*="AI Overview"]),
+a[href*="udm=49"] {
+    display: none !important;
+}
+
+/* =======================================================
+   ANTI-PUSHNEWS & POPUPS ON-SITE
+   ======================================================= */
+div[data-smart-inject-id*="BOX_"],
+div[class*="bGGcZJZR7IsEsQjTbspD"],
+div[class*="tsG0HQh7bcmTha7pyanx"],
+div[class*="OVMxXA9_q0rYnhtx8Wgk"] {
+    display: none !important;
+}
+
+
+/* =======================================================
+   BLOQUEIO DO YOUTUBE SHORTS (PRATELEIRAS & MENUS)
+   ======================================================= */
+ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]),
+ytd-rich-shelf-renderer[is-shorts],
+ytd-reel-shelf-renderer,
+ytd-mini-guide-entry-renderer:has(a[title="Shorts"]),
+ytd-mini-guide-entry-renderer:has(a[href*="/shorts"]),
+ytd-guide-entry-renderer:has(a[title="Shorts"]),
+ytd-guide-entry-renderer:has(a[href*="/shorts"]),
+ytd-video-renderer:has(a[href*="/shorts"]),
+yt-tab-shape[tab-title="Shorts"] {
+    display: none !important;
+}
+
+
+/* =======================================================
+   ANTI-COOKIE & LGPD / GDPR BANNERS (SEM PRECISAR CLICAR)
+   ======================================================= */
+
+/* 1. Destrava scroll bloqueado por modais de cookie */
+html.cookie-locked,
+body.cookie-locked,
+html:has(#onetrust-consent-sdk),
+body:has(#onetrust-consent-sdk) {
+    overflow: auto !important;
+    position: static !important;
+}
+
+/* 2. Maiores provedores globais e nacionais de consentimento de cookies */
+#onetrust-consent-sdk,
+.onetrust-pc-dark-filter,
+#onetrust-banner-sdk,
+#CybotCookiebotDialog,
+#CybotCookiebotDialogBodyUnderlay,
+#cookie-law-info-bar,
+#cookie-law-info-again,
+#cookie-notice,
+.cookie-notice-container,
+#cookies-eu-wrapper,
+#cookies-eu-banner,
+.cc-window,
+.cc-banner,
+.cc-floating,
+.cc-overlay,
+#didomi-host,
+#didomi-notice,
+#usercentrics-root,
+.usercentrics-modal,
+div[class*="cookie-banner"],
+div[id*="cookie-banner"],
+div[class*="cookie-notice"],
+div[id*="cookie-notice"],
+div[class*="cookie-consent"],
+div[id*="cookie-consent"],
+div[class*="CookieConsent"],
+div[id*="CookieConsent"],
+div[class*="lgpd-banner"],
+div[id*="lgpd-banner"],
+div[class*="lgpd-modal"],
+div[id*="lgpd-modal"],
+div[class*="banner-lgpd"],
+div[id*="banner-lgpd"],
+div[aria-label*="cookie"],
+div[aria-label*="Cookie"],
+div[aria-label*="LGPD"],
+div[aria-label*="lgpd"] {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+
+/* =======================================================
+   GOOGLE SERP PURA & CLÁSSICA (ORGANIC ONLY)
+   ======================================================= */
+
+/* 1. "As pessoas também perguntam" (People Also Ask / PAA) */
+div[jsname="yEVEwb"],
+div[data-initq]:has(span:contains("As pessoas também perguntam")),
+div[data-initq]:has(span:contains("People also ask")),
+div.related-question-pair,
+div[jscontroller="ecn20b"],
+div.MjjYud:has(div[jsname="yEVEwb"]),
+div.MjjYud:has([aria-level="2"]:contains("As pessoas também perguntam")),
+div.MjjYud:has([aria-level="2"]:contains("People also ask")),
+
+/* 2. Carrosséis de "Vídeos Curtos" (Shorts / Reels / TikTok) na busca */
+div[data-attrid="ShortVideos"],
+div.MjjYud:has(a[href*="/shorts/"]),
+div.MjjYud:has(span:contains("Vídeos curtos")),
+div.MjjYud:has(span:contains("Short videos")),
+div[jsname="g99omc"],
+
+/* 3. Blocos invasivos de "Pesquisas relacionadas" no meio dos resultados */
+div.MjjYud:has(div[jsname="I6B20c"]),
+div#bres,
+div.k8XOCe,
+div[data-attrid*="Refinements"] {
+    display: none !important;
+}
+
+
+/* =======================================================
+   ANTI-CHUMBOX / WIDGETS DE FOFOCA (TABOOLA, OUTBRAIN, ETC)
+   ======================================================= */
+
+/* 1. Taboola */
+div[id*="taboola-"],
+div[class*="tbl-"],
+.trc_related_container,
+.trc_rbox_container,
+.taboola-placeholder,
+div[data-taboola-placeholder],
+div:has(> a[href*="taboola.com"]),
+
+/* 2. Outbrain */
+.OUTBRAIN,
+div[class*="ob-widget"],
+div[id*="outbrain"],
+div[data-widget-id*="AR_"],
+div[data-src*="outbrain.com"],
+div:has(> a[href*="outbrain.com"]),
+
+/* 3. Revcontent, MGID e Dianomi */
+div[id*="rc-widget"],
+div[class*="rc-"],
+div[id*="mgid_"],
+div[class*="mgid_"],
+div[id*="dianomi_"],
+div[class*="dianomi_"],
+
+/* 4. Containers genéricos de conteúdo patrocinado / "Recomendados da Web" */
+div[class*="sponsored-content"],
+div[id*="sponsored-content"],
+div[class*="content-recommender"],
+div[class*="recommended-links"],
+aside:has(span:contains("Recomendado por")),
+aside:has(span:contains("Patrocinado por")),
+section:has(span:contains("Recomendados da Web")),
+section:has(span:contains("Links patrocinados")) {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* =======================================================
+   BLOQUEIO DO YOUTUBE PLAYABLES (SALA DE JOGOS & MINIGAMES)
+   ======================================================= */
+ytd-rich-section-renderer:has(a[href*="/playables"]),
+ytd-rich-section-renderer:has(span:contains("Sala de Jogos")),
+ytd-rich-shelf-renderer:has(a[href*="/playables"]),
+ytd-mini-guide-entry-renderer:has(a[href*="/playables"]),
+ytd-guide-entry-renderer:has(a[href*="/playables"]),
+ytd-mini-game-card-view-model,
+mini-game-card-view-model {
+    display: none !important;
+}
+
+
+/* =======================================================
+   ANTI-SENSACIONALISMO: EDITORIAS PURAS DE FOFOCA EM PORTAIS
+   ======================================================= */
+
+/* UOL Splash / Famosos */
+uol.com.br##div:has(> a[href*="/splash/"]),
+uol.com.br##a[href*="/splash/"],
+uol.com.br##[data-section="splash"],
+
+/* G1 Pop & Arte / Quem */
+globo.com##div:has(> a[href*="/pop-arte/"]),
+globo.com##div:has(> a[href*="revistaquem.globo.com"]),
+globo.com##a[href*="/pop-arte/"],
+
+/* Metrópoles Famosos / Leo Dias / Celebridades */
+metropoles.com##div:has(> a[href*="/entretenimento/"]),
+metropoles.com##div:has(> a[href*="/colunas/leo-dias/"]),
+metropoles.com##div:has(> a[href*="/colunas/fabia-oliveira/"]),
+
+/* Terra Gente / Famosos */
+terra.com.br##div:has(> a[href*="/diversao/gente/"]),
+terra.com.br##div:has(> a[href*="/entretenimento/"]),
+
+/* R7 Entretenimento / Famosos */
+r7.com##div:has(> a[href*="/entretenimento/"]),
+r7.com##div:has(> a[href*="/famosos-e-tv/"]) {
+    display: none !important;
+}
